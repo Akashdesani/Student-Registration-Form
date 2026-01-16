@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #ffffff; /* Website background white */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            background: linear-gradient(#aed2ff, #fbb0ff); /* Same color as photo */
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 90%;
+            padding: 6px;
+            border: 1px solid #666;
+            border-radius: 3px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Registration Form Using Table in HTML</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="number" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><input type="text" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <td>Pin Code:</td>
+                    <td><input type="number" maxlength="6"></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><input type="text" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><input type="text" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox">Drawing
+                        <input type="checkbox">Singing
+                        <input type="checkbox">Dancing
+                        <input type="checkbox">Sketching
+                        <input type="checkbox">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <ul>
+                            <li>High School (10th)</li>
+                            <li>Higher School (12th)</li>
+                            <li>Graduation</li>
+                            <li>Post Graduation</li>
+                            <li>Other</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Applied For:</td>
+                    <td>
+                        <ul>
+                            <li>BCA</li>
+                            <li>B.Sc</li>
+                            <li>B.Com</li>
+                            <li>BA</li>
+                            <li>MCA</li>
+                            <li>M.Sc</li>
+                            <li>M.Com</li>
+                            <li>MA</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

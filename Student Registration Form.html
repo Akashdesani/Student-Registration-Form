@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Website background white */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 40%;
+            margin: 30px auto;
+            background: #fff0f0; /* Form background color as before */
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #e0a5a5;
+        }
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], select, textarea {
+            width: 97%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .name-group input {
+            width: 47%;
+            margin-right: 4%;
+        }
+        .dob {
+            display: flex;
+            gap: 10px;
+        }
+        .dob input {
+            width: 32%;
+        }
+        .gender, .department {
+            margin-top: 5px;
+        }
+        .gender input, .department input {
+            margin-right: 5px;
+        }
+        input[type="file"] {
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form>
+            <label>Roll no :</label>
+            <input type="text" name="rollno" required>
+
+            <label>Student name :</label>
+            <div class="name-group">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+
+            <label>Father's name :</label>
+            <input type="text" required>
+
+            <label>Date of birth :</label>
+            <div class="dob">
+                <input type="text" placeholder="Day">
+                <input type="text" placeholder="Month">
+                <input type="text" placeholder="Year">
+            </div>
+
+            <label>Mobile no :</label>
+            <input type="text" placeholder="+91" required>
+
+            <label>Email id :</label>
+            <input type="email" required>
+
+            <label>Password :</label>
+            <input type="password" required>
+
+            <label>Gender :</label>
+            <div class="gender">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+
+            <label>Department :</label>
+            <div class="department">
+                <input type="checkbox"> CSE
+                <input type="checkbox"> IT
+                <input type="checkbox"> ECE
+                <input type="checkbox"> Civil
+                <input type="checkbox"> Mech
+            </div>
+
+            <label>Course :</label>
+            <select>
+                <option>Select Current Course</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Tech</option>
+                <option>MCA</option>
+                <option>M.Tech</option>
+            </select>
+
+            <label>Student photo :</label>
+            <input type="file">
+
+            <label>City :</label>
+            <input type="text">
+
+            <label>Address :</label>
+            <textarea rows="3"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
